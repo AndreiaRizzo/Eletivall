@@ -38,3 +38,4 @@ class Livro{
 } 
 
 $obj = new Livro("O Livro", "Ana", "2024");
+var_dump($obj);
