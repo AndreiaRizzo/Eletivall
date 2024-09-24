@@ -75,4 +75,48 @@ class ListaController
         return ($fah - 32) / 1.8;
     }
 
+    public function mostrarExer8(){
+        return view("exer8");
+    }
+    public function calcularExer8(Request $request){
+        $altura = (float)$request->input("altura");
+        $largura = (float)$request->input("largura");
+        return $altura * $largura;
+    }
+
+    public function mostrarExer9(){
+        return view("exer9");
+    }
+    public function calcularExer9(Request $request){
+        $raio = (float)$request->input("raio");
+        
+        return pi() * pow($raio, 2) ;
+    }
+
+    public function mostrarExer10(){
+        return view("exer10");
+    }
+    public function calcularExer10(Request $request){
+        $altura = (float)$request->input("altura");
+        $largura = (float)$request->input("largura");
+        return 2*$altura + 2*$largura;
+    }
+
+    public function mostrarExer11(){
+        return view("exer11");
+    }
+    public function calcularExer11(Request $request){
+        $raio = (float)$request->input("raio");
+        
+        return 2 * pi() * $raio;
+    }
+
+    public function mostrarExer12(){
+        return view("exer12");
+    }
+    public function calcularExer12(Request $request){
+        $base = (float)$request->input("base");
+        $expoente = (float)$request->input("expoente");
+        return pow($base, $expoente);
+    }
 }
