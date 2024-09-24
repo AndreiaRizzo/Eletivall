@@ -49,5 +49,28 @@ Route::post('/respostaexer11', [ListaController::class, 'calcularExer11']);
 Route::get('/exer12', [ListaController::class, 'mostrarExer12']);
 Route::post('/respostaexer12', [ListaController::class, 'calcularExer12']);
 
+Route::get('/exer13', [ListaController::class, 'mostrarExer13']);
+Route::post('/respostaexer13', [ListaController::class, 'calcularExer13']);
+
+Route::get('/exer14', [ListaController::class, 'mostrarExer14']);
+Route::post('/respostaexer14', [ListaController::class, 'calcularExer14']);
+
+Route::get('/exer15', [ListaController::class, 'mostrarExer15']);
+Route::post('/respostaexer15', [ListaController::class, 'calcularExer15']);
+
+Route::get('/exer16', [ListaController::class, 'mostrarExer16']);
+Route::post('/respostaexer16', [ListaController::class, 'calcularExer16']);
+
+Route::get('/exer17', [ListaController::class, 'mostrarExer17']);
+Route::post('/respostaexer17', [ListaController::class, 'calcularExer17']);
+
+Route::get('/exer18', [ListaController::class, 'mostrarExer18']);
+Route::post('/respostaexer18', [ListaController::class, 'calcularExer18']);
+
+Route::get('/exer19', [ListaController::class, 'mostrarExer19']);
+Route::post('/respostaexer19', [ListaController::class, 'calcularExer19']);
+
+Route::get('/exer20', [ListaController::class, 'mostrarExer20']);
+Route::post('/respostaexer20', [ListaController::class, 'calcularExer20']);
 
 

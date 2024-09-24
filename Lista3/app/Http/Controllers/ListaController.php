@@ -119,4 +119,32 @@ class ListaController
         $expoente = (float)$request->input("expoente");
         return pow($base, $expoente);
     }
+
+    public function mostrarExer13(){
+        return view("exer13");
+    }
+    public function calcularExer13(Request $request){
+        $medida = str_replace(',', '.', $request->input("medida"));
+
+        return (float)$medida * 100;
+    }
+
+    public function mostrarExer14(){
+        return view("exer14");
+    }
+    public function calcularExer14(Request $request){
+        $medida = str_replace(',', '.', $request->input("medida"));
+
+        return (float)$medida * 0.621371;
+    }
+
+    public function mostrarExer15(){
+        return view("exer15");
+    }
+    public function calcularExer15(Request $request){
+        $altura = str_replace(',','.', $request->input("altura"));
+        $peso = str_replace(',','.',$request->input("peso"));
+        return $peso / pow($altura, 2);
+    }
+
 }
